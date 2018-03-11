@@ -1,4 +1,9 @@
-
+body{
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 0;
+}
 
 #gridcon{
 	display: none  ;
@@ -74,7 +79,7 @@
 
 #namecon{
 	position: relative;
-	width: 100vw;
+	width: 98.88vw;
 	height: 70vh;
 	background-color: #429DDB;
 	z-index: 3;
@@ -87,7 +92,7 @@
 	position: absolute;
 	width: 14.8vw;
 	height: 6.42vw;
-	left: 33%;
+	left: 28%;
 	bottom: -.2%;
 	z-index: -200;
 	display: flex;
@@ -97,17 +102,12 @@
 	transition: .2s;
 }
 
-#tam{
-	position: absolute;
-	transition: 0.5s;
-
-}
 
 #den{
 	position: absolute;
 	width: 15vw;
 	height: 8vw;
-	left: 50%;
+	left: 46%;
 	bottom: -1.7%;
 	z-index: -200;
 	display: flex;
@@ -122,8 +122,7 @@
 	position: absolute;
 	width: 45vw;
 	height: 24vw;
-	left: 0%;
-	font-family: 'Poppins', sans-serif;
+	left: -3%;
 	bottom: -28.44%;
 	z-index: -200;
 	display: flex;
@@ -137,8 +136,8 @@
 
 #content1 {
 	background-color: #F1E9DA;
-	height: 120vh;
-	width: 100vw;
+	height: 50vw;
+	width: 98.88vw;
 	z-index: 500;
 	position: relative;
 }
