@@ -86,9 +86,9 @@
 #tamcon{
 	position: absolute;
 	width: 14.8vw;
-	height: 6.44vw;
+	height: 6.42vw;
 	left: 33%;
-	bottom: -.1%;
+	bottom: -.2%;
 	z-index: -200;
 	display: flex;
 	flex-direction: column;
@@ -119,13 +119,19 @@
 }
 
 #name {
-	color: #F1E9DA;
-	font-family: 'Poppins', sans-serif;
-	font-size: 4.5em;
 	position: absolute;
-	bottom: -5.2%;
-	left:3%;
-	z-index: 10;
+	width: 45vw;
+	height: 24vw;
+	left: 0%;
+	font-family: 'Poppins', sans-serif;
+	bottom: -28.44%;
+	z-index: -200;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	background-size: contain;
+	background-image: url("img/name2.svg");
+	transition: .2s;
 
 }
 
