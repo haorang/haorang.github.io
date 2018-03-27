@@ -36,7 +36,7 @@ body{
 
 .speech-bubble {
 	position: relative;
-	background: #F1E9DA;
+	background: #EDF6FB;
 	border-radius: .4em;
 }
 
@@ -48,7 +48,7 @@ body{
 	width: 0;
 	height: 0;
 	border: 20px solid transparent;
-	border-right-color: #F1E9DA;
+	border-right-color: #EDF6FB;
 	border-left: 0;
 	border-bottom: 0;
 	margin-top: -10px;
@@ -88,17 +88,17 @@ body{
 
 }
 
-#tamcon{
+#tam{
 	position: absolute;
 	width: 14.8vw;
 	height: 6.42vw;
-	left: 28%;
+	left: 30%;
 	bottom: -.2%;
 	z-index: -200;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	background-image: url("img/fillTAM.svg");
+	background-image: url("img/tam.svg");
 	transition: .2s;
 }
 
@@ -107,35 +107,50 @@ body{
 	position: absolute;
 	width: 15vw;
 	height: 8vw;
-	left: 46%;
+	left: 48%;
 	bottom: -1.7%;
 	z-index: -200;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	background-image: url("img/filledden4.svg");
+	background-image: url("img/den.svg");
+	transition: .2s;
+	
+}
+
+#sd{
+	position: absolute;
+	width: 12.29vw;
+	height: 8.5vw;
+	left: 66%;
+	bottom: -.2%;
+	z-index: -200;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-image: url("img/sd.svg");
 	transition: .2s;
 	
 }
 
 #name {
 	position: absolute;
-	width: 45vw;
-	height: 24vw;
-	left: -3%;
-	bottom: -28.44%;
+	width: 25vw;
+	height: 3.02vw;
+	left: 1.5%;
+	bottom: -.2%;
 	z-index: -200;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	background-size: contain;
-	background-image: url("img/name2.svg");
+	background-image: url("img/namex.svg");
 	transition: .2s;
 
 }
 
 #content1 {
-	background-color: #F1E9DA;
+	background-color: #EDF6FB;
 	height: 50vw;
 	width: 98.88vw;
 	z-index: 500;

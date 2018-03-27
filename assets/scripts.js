@@ -1,11 +1,11 @@
 $(document).ready(function(){
 		
-   $('#tamcon').hover(function(){
+   $('#tam').hover(function(){
    		$(this).css("background-image", 'url("assets/img/coloredTAM5.svg")');
 
    },
    function(){
-   		$(this).css("background-image", 'url("assets/img/fillTAM.svg")')
+   		$(this).css("background-image", 'url("assets/img/tam.svg")')
    });
 
    $('#den').hover(function(){
@@ -13,7 +13,15 @@ $(document).ready(function(){
 
    },
    function(){
-   		$(this).css("background-image", 'url("assets/img/filledden4.svg")')
+   		$(this).css("background-image", 'url("assets/img/den.svg")')
+   });
+
+   $('#sd').hover(function(){
+         $(this).css("background-image", 'url("assets/img/sd2.svg")');
+
+   },
+   function(){
+         $(this).css("background-image", 'url("assets/img/sd.svg")')
    });
 
 
