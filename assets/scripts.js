@@ -24,5 +24,13 @@ $(document).ready(function(){
          $(this).css("background-image", 'url("assets/img/sd.svg")')
    });
 
+   $('#berk').hover(function(){
+         $(this).css("background-image", 'url("assets/img/coloredberk.svg")');
+
+   },
+   function(){
+         $(this).css("background-image", 'url("assets/img/berk.svg")')
+   });
+
 
 });

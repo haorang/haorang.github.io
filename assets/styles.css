@@ -22,11 +22,11 @@ body{
 
 
 #framecon {
-	background-image: url("img/heyo.png");
+	background-image: url("img/uhh.png");
 	background-size: contain;
 	position: fixed;
 	width: 12.6vw;
-	height: 18vw;
+	height: 17vw;
 	left: 50%;
 	top: 30%;
 	transform: translate(-50%,-50%);
@@ -74,14 +74,14 @@ body{
 	padding: 10px;
 	display: flex;
 	align-items: center;	
-	color: #429DDB;
+	color: #521BC3;
 }
 
 #namecon{
 	position: relative;
 	width: 98.88vw;
 	height: 70vh;
-	background-color: #429DDB;
+	background-color: #521BC3;
 	z-index: 3;
 	font-size: 1vw;
 
@@ -129,6 +129,21 @@ body{
 	flex-direction: column;
 	justify-content: flex-end;
 	background-image: url("img/sd.svg");
+	transition: .2s;
+	
+}
+
+#berk{
+	position: absolute;
+	width: 14vw;
+	height: 12.61vw;
+	left: 82%;
+	bottom: -.1%;
+	z-index: -200;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-image: url("img/berk.svg");
 	transition: .2s;
 	
 }
