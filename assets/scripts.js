@@ -142,6 +142,39 @@ $(document).ready(function(){
 
    });
 
+  $('#insta').hover(function(){
+         $(this).css("background-image", 'url("assets/img/instat.svg")');
+         setTimeout(function(){
+            $("#insta").css("transition", '0s');
+            $("#insta").css("background-image", 'url("assets/img/followme.svg")');
+            $("#insta").css("width", '12.7vw');
+            $("#insta").css("left", '-8%');
+         }, 300);
+         
+         setTimeout(function(){  
+            $("#insta").css("transition", '.5s');
+            $("#insta").css("left", '-.2%');
+         }, 350);
+   },
+   function(){
+         $(this).css("left", '-8%');
+         setTimeout(function(){  
+            
+            $("#insta").css("transition", '0s');
+         
+            $("#insta").css("width", '4.86vw');
+            $("#insta").css("background-image", 'url("assets/img/instat.svg")')
+            $("#insta").css("left", '-.2%');
+         }, 530);
+         setTimeout(function(){  
+            
+            $("#insta").css("transition", '.3s');
+            $("#insta").css("background-image", 'url("assets/img/insta.svg")')
+         }, 550);
+         
+
+   });
+
 
 });
 
