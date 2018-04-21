@@ -83,6 +83,11 @@ body{
 	height: 10vw;
 }
 
+#soctalk{
+	display: none;
+	height: 2.5vw;
+}
+
 #dentalk{
 	display: none;
 	height:11.5vw;

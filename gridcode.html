@@ -22,3 +22,114 @@
 
 			
 		</div>
+
+
+
+$('#linkedin').hover(function(){
+         setTimeout(function(){
+            hoverin = true;
+
+         }, 100); 
+
+         setTimeout(function(){
+            if (hoverin){
+              $('#linkedin').css("background-image", 'url("assets/img/lit.svg")');
+         setTimeout(function(){
+            $("#linkedin").css("transition", '0s');
+            $("#linkedin").css("background-image", 'url("assets/img/connect.svg")');
+            $("#linkedin").css("width", '12.7vw');
+            $("#linkedin").css("left", '-8%');
+         }, 300);
+         
+         setTimeout(function(){  
+            $("#linkedin").css("transition", '.5s');
+            $("#linkedin").css("left", '-.2%');
+         }, 350);
+            }
+         }, 500);      
+
+        /* $(this).css("background-image", 'url("assets/img/lit.svg")');
+         setTimeout(function(){
+            $("#linkedin").css("transition", '0s');
+            $("#linkedin").css("background-image", 'url("assets/img/connect.svg")');
+            $("#linkedin").css("width", '12.7vw');
+            $("#linkedin").css("left", '-8%');
+         }, 300);
+         
+         setTimeout(function(){  
+            $("#linkedin").css("transition", '.5s');
+            $("#linkedin").css("left", '-.2%');
+         }, 350); */
+   },
+   function(){
+         setTimeout(function(){
+            hoverin = false;
+
+         }, 200);
+
+         setTimeout(function(){
+            if (!hoverin){
+            $('#linkedin').css("left", '-8%');
+         setTimeout(function(){  
+            
+            $("#linkedin").css("transition", '0s');
+         
+            $("#linkedin").css("width", '4.86vw');
+            $("#linkedin").css("background-image", 'url("assets/img/lit.svg")');
+            $("#linkedin").css("left", '-.2%');
+         }, 500);
+         setTimeout(function(){  
+            
+            $("#linkedin").css("transition", '.3s');
+            $("#linkedin").css("background-image", 'url("assets/img/linkedin.svg")')
+         }, 550);
+         }
+         }, 300);
+
+            
+        /* $(this).css("left", '-8%');
+         setTimeout(function(){  
+            
+            $("#linkedin").css("transition", '0s');
+         
+            $("#linkedin").css("width", '4.86vw');
+            $("#linkedin").css("background-image", 'url("assets/img/lit.svg")');
+            $("#linkedin").css("left", '-.2%');
+         }, 500);
+         setTimeout(function(){  
+            
+            $("#linkedin").css("transition", '.3s');
+            $("#linkedin").css("background-image", 'url("assets/img/linkedin.svg")')
+         }, 550);*/
+         
+
+   });
+
+
+
+
+   $('#berk').hover(function(){
+         setTimeout(function(){
+            hoverin = true;
+
+         }, 100);
+
+         setTimeout(function(){
+            if (hoverin){
+               $("#berk").css("background-image", 'url("assets/img/coloredberk.svg")');
+               $(".speech-bubble").fadeOut(700);
+               $("#berktalk").fadeIn(700);
+ 
+            }
+         }, 500);
+
+   },
+   function(){
+         $(this).css("background-image", 'url("assets/img/berk.svg")')
+         $("#berktalk").fadeOut(700);
+
+         setTimeout(function(){
+            hoverin = false;
+
+         }, 200)
+   });

@@ -17,6 +17,8 @@ $(document).ready(function(){
       console.log(xind, yind);
    });
 
+   var hoverin = false;
+
 		
    $('#tam').hover(function(){
    		$(this).css("background-image", 'url("assets/img/coloredTAM7.svg")');
@@ -53,30 +55,49 @@ $(document).ready(function(){
          $("#sdtalk").fadeOut(700);
    });
 
+
   
 
    $('#berk').hover(function(){
-         $(this).css("background-image", 'url("assets/img/coloredberk.svg")');
-         $(".speech-bubble").fadeOut(700);
-         $("#berktalk").fadeIn(700);
+        
+               $("#berk").css("background-image", 'url("assets/img/coloredberk.svg")');
+               $(".speech-bubble").fadeOut(700);
+               $("#berktalk").fadeIn(700);
+
 
    },
    function(){
          $(this).css("background-image", 'url("assets/img/berk.svg")')
          $("#berktalk").fadeOut(700);
+
    });
 
    $('#name').hover(function(){
-         $(this).css("background-image", 'url("assets/img/colorname.svg")');
-       
+         setTimeout(function(){
+            hoverin = true;
+
+         }, 100);
+         setTimeout(function(){
+            if (hoverin){
+              $('#name').css("background-image", 'url("assets/img/colorname.svg")'); 
+            }
+         }, 500);
 
    },
    function(){
-         $(this).css("background-image", 'url("assets/img/namex.svg")')
+         $('#name').css("background-image", 'url("assets/img/namex.svg")')
+          setTimeout(function(){
+            hoverin = false;
+
+         }, 200);
+         
+                  //$(this).css("background-image", 'url("assets/img/namex.svg")')
    });
 
   $('#linkedin').hover(function(){
-         $(this).css("background-image", 'url("assets/img/lit.svg")');
+            
+
+        $(this).css("background-image", 'url("assets/img/lit.svg")');
          setTimeout(function(){
             $("#linkedin").css("transition", '0s');
             $("#linkedin").css("background-image", 'url("assets/img/connect.svg")');
@@ -85,21 +106,21 @@ $(document).ready(function(){
          }, 300);
          
          setTimeout(function(){  
-            console.log("yugegay");
             $("#linkedin").css("transition", '.5s');
             $("#linkedin").css("left", '-.2%');
-         }, 320);
+         }, 350);       
    },
    function(){
-         $(this).css("left", '-8%');
+         
+        $(this).css("left", '-8%');
          setTimeout(function(){  
             
             $("#linkedin").css("transition", '0s');
          
             $("#linkedin").css("width", '4.86vw');
-            $("#linkedin").css("background-image", 'url("assets/img/lit.svg")')
+            $("#linkedin").css("background-image", 'url("assets/img/lit.svg")');
             $("#linkedin").css("left", '-.2%');
-         }, 510);
+         }, 500);
          setTimeout(function(){  
             
             $("#linkedin").css("transition", '.3s');
@@ -113,7 +134,7 @@ $(document).ready(function(){
          $(this).css("background-image", 'url("assets/img/fbt.svg")');
          setTimeout(function(){
             $("#fb").css("transition", '0s');
-            $("#fb").css("background-image", 'url("assets/img/addme.svg")');
+            $("#fb").css("background-image", 'url("assets/img/friendme.svg")');
             $("#fb").css("width", '12.7vw');
             $("#fb").css("left", '-8%');
          }, 300);
