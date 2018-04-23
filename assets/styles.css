@@ -22,6 +22,7 @@ body{
 
 
 #framecon {
+	display: none;
 	background-image: url("img/uhh.png");
 	background-size: contain;
 	position: fixed;
@@ -85,7 +86,7 @@ body{
 
 #soctalk{
 	display: none;
-	height: 2.5vw;
+	height: 2.5 vw;
 }
 
 #dentalk{
@@ -261,16 +262,77 @@ body{
 }
 
 #content1 {
-	background-color: #253242;
-	color: black;
+	background-color: #521BC3;
 	font-size: 700%;
 	height: 50vw;
-	width: 98.88vw;
-	z-index: 500;
+	width: 100vw;
+	z-index: 0;
 	position: relative;
-	background-image: url("img/rh.jpg");
 	background-size: fill;
 }
+
+
+#room{
+	position: absolute;
+	display: none;
+	width: 59.2vw;
+	height: 40vw;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -200;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background-image: url("img/room.svg");
+	transition: .5s;
+
+}
+
+#shoe{
+	position: absolute;
+	width: 4.45vw;
+	height: 5vw;
+	left: 70%;
+	bottom: 5%;
+	z-index: 200;
+
+	background-image: url("img/hishoe.png");
+	background-size: contain;
+	transition: .5s;
+
+}
+
+#book{
+	position: absolute;
+	width: 5.3vw;
+	height: 1.75vw;
+	left: 50%;
+	bottom: 50%;
+	z-index: 200;
+
+	background-image: url("img/book.png");
+	background-size: contain;
+	transition: .5s;
+
+}
+
+#razer{
+	position: absolute;
+	width: 7vw;
+	height: 4.72vw;
+	left: 34%;
+	bottom: 47%;
+	z-index: 200;
+
+	background-image: url("img/razer.png");
+	background-size: contain;
+	transition: .5s;
+
+}
+
+
+
 
 
 

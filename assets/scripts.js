@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
    $('#fullpage').fullpage({
-      scrollingSpeed: 1000,
+      scrollingSpeed: 1200,
       parralax: true,
       navigation: true
    });
@@ -19,40 +19,42 @@ $(document).ready(function(){
 
    var hoverin = false;
 
+   
+
 		
    $('#tam').hover(function(){
    		$(this).css("background-image", 'url("assets/img/coloredTAM7.svg")');
          $(".speech-bubble").fadeOut();
          $("#dentalk").fadeOut();
-         $("#tamtalk").fadeIn(700);
+         $("#tamtalk").fadeIn(400);
 
    },
    function(){
    		$(this).css("background-image", 'url("assets/img/tam.svg")')
-         $("#tamtalk").fadeOut(700);
+         $("#tamtalk").fadeOut(400);
    });
 
    $('#den').hover(function(){
    		$(this).css("background-image", 'url("assets/img/coloredden4.svg")');
-         $(".speech-bubble").fadeOut(700);
-         $("#dentalk").fadeIn(700);
+         $(".speech-bubble").fadeOut(400);
+         $("#dentalk").fadeIn(400);
       
 
    },
    function(){
    		$(this).css("background-image", 'url("assets/img/den.svg")')
-         $("#dentalk").fadeOut(700);
+         $("#dentalk").fadeOut(400);
    });
 
    $('#sd').hover(function(){
          $(this).css("background-image", 'url("assets/img/sd5.svg")');
-         $(".speech-bubble").fadeOut(700);
-         $("#sdtalk").fadeIn(700);
+         $(".speech-bubble").fadeOut(400);
+         $("#sdtalk").fadeIn(400);
 
    },
    function(){
          $(this).css("background-image", 'url("assets/img/sd.svg")')
-         $("#sdtalk").fadeOut(700);
+         $("#sdtalk").fadeOut(400);
    });
 
 
@@ -61,14 +63,14 @@ $(document).ready(function(){
    $('#berk').hover(function(){
         
                $("#berk").css("background-image", 'url("assets/img/coloredberk.svg")');
-               $(".speech-bubble").fadeOut(700);
-               $("#berktalk").fadeIn(700);
+               $(".speech-bubble").fadeOut(400);
+               $("#berktalk").fadeIn(400);
 
 
    },
    function(){
          $(this).css("background-image", 'url("assets/img/berk.svg")')
-         $("#berktalk").fadeOut(700);
+         $("#berktalk").fadeOut(400);
 
    });
 
@@ -196,8 +198,45 @@ $(document).ready(function(){
 
    });
 
+$('#book').hover(function(){
+         $(this).css("background-image", 'url("assets/img/hibook.png")');
+        
+
+   },
+   function(){
+         $(this).css("background-image", 'url("assets/img/book.png")')
+   });
+
+
+$('#razer').hover(function(){
+         $(this).css("background-image", 'url("assets/img/hirazer.png")');
+        
+
+   },
+   function(){
+         $(this).css("background-image", 'url("assets/img/razer.png")')
+   });
+
+$('#shoe').hover(function(){
+         $(this).css("background-image", 'url("assets/img/hishoe.png")');
+        
+
+   },
+   function(){
+         $(this).css("background-image", 'url("assets/img/shoe.png")')
+   });
+
+
+
 
 });
+
+
+
+
+
+
+
 
 function openInNewTab(url) {
   var win = window.open(url, '_blank');
