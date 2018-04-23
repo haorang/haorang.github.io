@@ -226,6 +226,33 @@ $('#shoe').hover(function(){
          $(this).css("background-image", 'url("assets/img/shoe.png")')
    });
 
+$('#skate').hover(function(){
+         $(this).css("background-image", 'url("assets/img/hiskate.png")');
+        
+
+   },
+   function(){
+         $(this).css("background-image", 'url("assets/img/skate-1.png")')
+   });
+
+$('#ts').hover(function(){
+         $(this).css("background-image", 'url("assets/img/hits.png")');
+        
+
+   },
+   function(){
+         $(this).css("background-image", 'url("assets/img/ts.png")')
+   });
+
+$('#pulp').hover(function(){
+         $(this).css("background-image", 'url("assets/img/hipulp.png")');
+        
+
+   },
+   function(){
+         $(this).css("background-image", 'url("assets/img/pulp.png")')
+   });
+
 
 
 
