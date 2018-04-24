@@ -293,7 +293,7 @@ body{
 	position: absolute;
 	width: 4.45vw;
 	height: 5vw;
-	left: 70%;
+	left: 60%;
 	bottom: 5%;
 	z-index: 200;
 	background-image: url("img/shoe.png");
@@ -367,9 +367,170 @@ body{
 
 }
 
+#lamp{
+	position: absolute;
+	width: 5.6vw;
+	height: 7vw;
+	left: 25%;
+	bottom: 49%;
+	z-index: 200;
+	background-image: url("img/lamp.png");
+	background-size: contain;
+	transition: .5s;
+
+}
+
+#window{
+	position: absolute;
+	width: 20vw;
+	height: 13.8vw;
+	left: 45%;
+	bottom: 55%;
+	z-index: 200;
+	background-image: url("img/window.png");
+	background-size: contain;
+	transition: .5s;
+
+}
+
+#ball{
+	position: absolute;
+	width: 5vw;
+	height:5vw;
+	left: 23%;
+	bottom: 5%;
+	z-index: 200;
+	background-image: url("img/ball.png");
+	background-size: contain;
+	transition: .5s;
+}
+
+#pulptalk{
+	display: none;
+	position: absolute;
+	width: 30vw;
+	height:18vw;
+	left: -23%;
+	bottom: 50%;
+	z-index: 200;
+	background-image: url("img/pulptalk.png");
+	background-size: contain;
+}
+
+#tstalk{
+	display: none;
+	position: absolute;
+	width: 30vw;
+	height:18vw;
+	left: 27%;
+	bottom: 50%;
+	z-index: 200;
+	background-image: url("img/tstalk.png");
+	background-size: contain;
+}
+
+#lamptalk{
+	display: none;
+	position: absolute;
+	width: 30vw;
+	height:18vw;
+	left: -27%;
+	bottom: 40%;
+	z-index: 200;
+	background-image: url("img/lamptalk.png");
+	background-size: contain;
+}
+
+#booktalk{
+	display: none;
+	position: absolute;
+	width: 30vw;
+	height:18vw;
+	left: 30%;
+	bottom: 58%;
+	z-index: 200;
+	background-image: url("img/booktalk.png");
+	background-size: contain;
+}
+
+#shoetalk{
+	display: none;
+	position: absolute;
+	width: 30vw;
+	height:18vw;
+	left: 40%;
+	bottom: 20%;
+	z-index: 200;
+	background-image: url("img/shoetalk.png");
+	background-size: contain;
+}
+
+#balltalk{
+	display: none;
+	position: absolute;
+	width: 30vw;
+	height:18vw;
+	left: -10%;
+	bottom: 20%;
+	z-index: 200;
+	background-image: url("img/balltalk.png");
+	background-size: contain;
+}
+
+#razertalk{
+	display: none;
+	position: absolute;
+	width: 30vw;
+	height:18vw;
+	left: 0%;
+	bottom: 60%;
+	z-index: 200;
+	background-image: url("img/razertalk.png");
+	background-size: contain;
+}
+
+#skatetalk{
+	display: none;
+	position: absolute;
+	width: 30vw;
+	height:18vw;
+	left: 50%;
+	bottom: 58%;
+	z-index: 200;
+	background-image: url("img/skatetalk.png");
+	background-size: contain;
+}
+
+#windowtalk{
+	display: none;
+	position: absolute;
+	width: 30vw;
+	height:18vw;
+	left: -7%;
+	bottom: 58%;
+	z-index: 200;
+	background-image: url("img/windowtalk.png");
+	background-size: contain;
+}
 
 
 
+
+
+
+
+
+
+
+#content2 {
+	background-color: #EDF6FB;
+	font-size: 700%;
+	height: 50vw;
+	width: 100vw;
+	z-index: 0;
+	position: relative;
+	background-size: fill;
+}
 
 
 

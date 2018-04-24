@@ -3,7 +3,21 @@ $(document).ready(function(){
    $('#fullpage').fullpage({
       scrollingSpeed: 1200,
       parralax: true,
-      navigation: true
+      navigation: true,
+      afterLoad: function(anchorLink, index){
+      var loadedSection = $(this);
+
+      //using index
+      if(index == 3){
+         $("#fp-nav ul li a span, .fp-slidesNav ul li a span ").css("background", "#521BC3 !important");
+         console.log("we made it fa");
+      }
+      else{
+         $("#fp-nav ul li a span, .fp-slidesNav ul li a span ").css("background", "#EDF6FB !important");
+         console.log("else");
+      }
+      }
+
    });
 
 
@@ -199,59 +213,101 @@ $(document).ready(function(){
    });
 
 $('#book').hover(function(){
+
          $(this).css("background-image", 'url("assets/img/hibook.png")');
-        
+         $("#booktalk").fadeIn();
 
    },
    function(){
          $(this).css("background-image", 'url("assets/img/book.png")')
+         $("#booktalk").fadeOut();
    });
 
 
 $('#razer').hover(function(){
          $(this).css("background-image", 'url("assets/img/hirazer.png")');
-        
+         $("#razertalk").fadeIn();
 
    },
    function(){
          $(this).css("background-image", 'url("assets/img/razer.png")')
+         $("#razertalk").fadeOut();
    });
 
 $('#shoe').hover(function(){
          $(this).css("background-image", 'url("assets/img/hishoe.png")');
+         $("#shoetalk").fadeIn();
         
 
    },
    function(){
          $(this).css("background-image", 'url("assets/img/shoe.png")')
+         $("#shoetalk").fadeOut();
    });
 
 $('#skate').hover(function(){
          $(this).css("background-image", 'url("assets/img/hiskate.png")');
+         $("#skatetalk").fadeIn();
         
 
    },
    function(){
          $(this).css("background-image", 'url("assets/img/skate-1.png")')
+         $("#skatetalk").fadeOut();
    });
 
 $('#ts').hover(function(){
          $(this).css("background-image", 'url("assets/img/hits.png")');
-        
-
+         $("#tstalk").fadeIn();  
    },
    function(){
          $(this).css("background-image", 'url("assets/img/ts.png")')
+         $("#tstalk").fadeOut();
    });
 
 $('#pulp').hover(function(){
          $(this).css("background-image", 'url("assets/img/hipulp.png")');
-        
+         $("#pulptalk").fadeIn();
 
    },
    function(){
          $(this).css("background-image", 'url("assets/img/pulp.png")')
+         $("#pulptalk").fadeOut();
    });
+
+$('#lamp').hover(function(){
+         $(this).css("background-image", 'url("assets/img/hilamp.png")');
+         $("#lamptalk").fadeIn();
+        
+
+   },
+   function(){
+         $(this).css("background-image", 'url("assets/img/lamp.png")')
+         $("#lamptalk").fadeOut();
+   });
+
+$('#window').hover(function(){
+         $(this).css("background-image", 'url("assets/img/hiwindow.png")');
+         $("#windowtalk").fadeIn();
+        
+
+   },
+   function(){
+         $(this).css("background-image", 'url("assets/img/window.png")')
+         $("#windowtalk").fadeOut();
+   });
+
+$('#ball').hover(function(){
+         $(this).css("background-image", 'url("assets/img/hiball.png")');
+         $("#balltalk").fadeIn();
+        
+
+   },
+   function(){
+         $(this).css("background-image", 'url("assets/img/ball.png")')
+         $("#balltalk").fadeOut();
+   });
+
 
 
 
