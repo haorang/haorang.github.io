@@ -9,11 +9,11 @@ $(document).ready(function(){
 
       //using index
       if(index == 2 || index == 3 ){
-         $('#framecon').fadeOut();
+         $('#framecon').fadeOut(); // jQuery Function Number 1
          
       }
       else{
-          $("#framecon").fadeIn();
+          $("#framecon").fadeIn(); // jQuery Function Number 2
       }
       }
 
@@ -35,10 +35,10 @@ $(document).ready(function(){
    
 
 		
-   $('#tam').hover(function(){
+   $('#tam').hover(function(){ // jQuery Function Number 3
    		$(this).css("background-image", 'url("assets/img/coloredTAM7.svg")');
          $(".speech-bubble").fadeOut();
-         $("#tamtalk").css("display", "flex");
+         $("#tamtalk").css("display", "flex"); // jQuery Function Number 4
          $("#tamtalk").fadeIn(400);
 
    },
@@ -343,8 +343,8 @@ $( "#search" ).bind('keypress', function(e) {
     }
 });
 
-$(".back").click(function(){
-   var par = $(this).parent()
+$(".back").click(function(){ // jQuery Function Number 5
+   var par = $(this).parent() // jQuery Function Number 6
    $(par).css("left", "-100%");
     setTimeout(function(){  
             $(par).hide();
