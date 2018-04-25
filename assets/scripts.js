@@ -366,3 +366,9 @@ function openInNewTab(url) {
   var win = window.open(url, '_blank');
   win.focus();
 }
+
+function opensec(sec){
+   $(sec).css("left", "0%");
+   $("#search").val("");
+   $("#search").hide();
+}

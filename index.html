@@ -7,8 +7,6 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/styles.css" />
 	<link rel="stylesheet" href = "jquery.fullPage.css"/>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<script src = "assets/scripts.js"></script>
 
@@ -34,13 +32,13 @@
 
 		</div>
 		<div id = "filler"></div>
-		<div id = "start" class = "speech-bubble greeting act">Hi, welcome to my life. Hover around 	and scroll to find out more about me.</div>
-		<div id = "soctalk" class = "speech-bubble greeting act">Find me on social media!</div>
-		<div id = "tamtalk" class = "speech-bubble greeting">I was born in Beijing, China. I spent the first four years of my life in China, mostly in Hubei. I visit my family in China every few years.</div>
-		<div id = "dentalk" class = "speech-bubble greeting">When I was four and a half I immigrated to the United States. I lived in Denver, Colorado	 for the next nine years, where I learned about multiplication and integrated into a new culture. I am still a huge fan of the Denver Broncos.</div>
-		<div id = "sdtalk" class = "speech-bubble greeting">After middle school, I moved to San Diego and began high school in La Jolla. It was hard for me to leave Denver, but San Diego is a pretty cool place.</div>
-		<div id = "berktalk" class = "speech-bubble greeting">I am currently studying Electrical Engineering and Computer Science at UC Berkeley. I can say for sure SoCal > NorCal.</div>
-		</div>
+		<div id = "start" class = "speech-bubble greeting act shadow">Hi, welcome to my life. Hover around 	and scroll to find out more about me.</div>
+		<div id = "soctalk" class = "speech-bubble greeting act shadow">Find me on social media!</div>
+		<div id = "tamtalk" class = "speech-bubble greeting shadow">I was born in Beijing, China. I spent the first four years of my life in China, mostly in Hubei. I visit my family in China every few years.</div>
+		<div id = "dentalk" class = "speech-bubble greeting shadow">When I was four and a half I immigrated to the United States. I lived in Denver, Colorado	 for the next nine years, where I learned about multiplication and integrated into a new culture. I am still a huge fan of the Denver Broncos.</div>
+		<div id = "sdtalk" class = "speech-bubble greeting shadow">After middle school, I moved to San Diego and began high school in La Jolla. It was hard for me to leave Denver, but San Diego is a pretty cool place.</div>
+		<div id = "berktalk" class = "speech-bubble greeting shadow">I am currently studying Electrical Engineering and Computer Science at UC Berkeley. I can say for sure SoCal > NorCal.</div>
+		</div> 
 
 
 		
@@ -57,15 +55,15 @@
 				<div id = "lamp"></div>
 				<div id = "window"></div>
 				<div id = "ball"></div>
-				<div id = "pulptalk"></div>
-				<div id = "tstalk"></div>
-				<div id = "lamptalk"></div>
-				<div id = "booktalk"></div>
-				<div id = "skatetalk"></div>
-				<div id = "razertalk"></div>
-				<div id = "windowtalk"></div>
-				<div id = "balltalk"></div>
-				<div id = "shoetalk"></div>
+				<div id = "pulptalk" class = "shadow"></div>
+				<div id = "tstalk" class = "shadow"></div>
+				<div id = "lamptalk" class = "shadow"></div>
+				<div id = "booktalk" class = "shadow"></div>
+				<div id = "skatetalk" class = "shadow"></div>
+				<div id = "razertalk" class = "shadow"></div>
+				<div id = "windowtalk" class = "shadow"></div>
+				<div id = "balltalk" class = "shadow"></div>
+				<div id = "shoetalk" class = "shadow"></div>
 
 			</div>
 
@@ -85,25 +83,35 @@
 
 			
 
-			<div id = "explanation">My resume is far too large and impressive to display on one page so search below for specific sections (Look up 'education', 'skills', 'experience', and 'projects'.</div>
-			<a id = "resume" onclick="openInNewTab('https://docs.google.com/document/d/10jov5yWoBwL1rpA1j-_uTrpli9c3r8JBMv9RrQQFfd8/edit?usp=sharing');" >Or find it on one page by clicking here.</a>
+			<div id = "explanation">My resume is far too large and impressive to display on one page so search below for specific sections. Look up or click: </div>
+			<div id ="ed" class = "seclink" onclick="opensec('#education');">'education',</div>
+			<div id ="sk" class = "seclink" onclick="opensec('#skills');"> 'skills',</div>
+			<div id ="ex" class = "seclink" onclick="opensec('#exp');"> 'experience',</div>
+			<div id ="pr" class = "seclink" onclick="opensec('#projects');"> 'projects'</div>
+			<a id = "resume" onclick="openInNewTab('https://docs.google.com/document/d/10jov5yWoBwL1rpA1j-_uTrpli9c3r8JBMv9RrQQFfd8/edit?usp=sharing');">Or find it on one page by clicking here.</a>
 			<input id = "search" type="text" placeholder="    Search" autocomplete="false">
 
 			<div id = "exp" class = "pagepart">
 				<button class = "back shadow">Back</button>
-				<div id = "exptalk">My professional experience thus far has been at Sorrento Therapuetics, Inc., a bioengineering company in La Jolla, California. There I was a research intern, gaining experience in research and development in a labaratory environment. I learned gel electrophoresis, DNA extraction, and other bioengineering skills. I executed a viral transfection protocol and edited it to assist future interns. </div>
+				<div id = "exptalk">My professional experience thus far has been at Sorrento Therapuetics, Inc., a bioengineering company in La Jolla, California. There I was a research intern, gaining experience in research and development in a labaratory environment. I learned gel electrophoresis, DNA extraction, and other bioengineering skills. As a two week project, I executed a viral transfection protocol and edited it to assist future interns. </div>
 				<div id = "sorr" class = "shadow"></div>
 			</div>
 
 			<div id = "projects" class = "pagepart">
 				<button class = "back shadow">Back</button>
-				<div id = "cal" class = "icon"></div>
+				<div id = "cal" class = "icon" onclick="openInNewTab('https://ethanteo99.github.io/sodahacks');"></div>
 				<div id = "karaoke" class = "icon"></div>
 				<div id = "quake" class = "icon"></div>
-				<div id = "caltalk"></div>
-				<div id = "karaoketalk"></div>
-				<div id = "quaketalk"></div>
+				<div id = "caltalk" class = 'ptalk'>"Berkeley VR" is a Oregon Trail inspired web game my friends and I created. It was written mostly in JavaScript and captures the constant challenge of the college student to balance different aspects of college life. I designed and created the graphics for the game. Click the icon to to visit it!</div>
+				<div id = "karaoketalk" class = 'ptalk'>I'm not so good at singing. I think that's because I'm not so good at pitch detecting. As such I wrote a karaoke app in Python using Aubio and PyAudio. It gives real time pitch feedback which I think is a useful tool to train well-pitched singing</div>
+				<div id = "quaketalk" class = 'ptalk'>As part of the Sports Analytics Group at Berkeley, I was part of a consulting team project for the San Jose Earthquakes. My team and I created predictive models and visualizations for concessions data in order to find a pricing solution for decreasing beer prices.</div>
 			</div>
+
+			<div id = "education" class = "pagepart">
+				<button class = "back shadow">Back</button>
+				<div id = "edutalk">I am currently pursuing a Bachelor of Science in Electrical Engineering and Computer Science at the University of California, Berkeley. <br> I began in August of 2017. I have taken the following courses: <br>Data Structures • Structure and Interpretation of Computer Programs • Designing Information Devices and Systems (I + II) • Linear Algebra and Differential Equations • Multivariable Calculus </div>
+				<div id = "squi" class = "shadow"></div>
+			
 
 		</div>
 

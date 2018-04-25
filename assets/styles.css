@@ -524,6 +524,7 @@ body{
 
 #content2 {
 	background-color: #EDF6FB;
+	font-family: Poppins;
 	font-size: 2vw;
 	height: 50vw;
 	width: 100vw;
@@ -551,7 +552,7 @@ body{
 .shadow{
 	border: 0px solid;
     padding: 10px;
-    box-shadow: 3px 3px 3px rgba(0,0,0,.8);
+    box-shadow: 3px 3px 3px rgba(0,0,0,.5);
 }
 
 #search:focus{
@@ -563,8 +564,36 @@ body{
 	position: absolute;
 	width: 60vw;
 	left: 50%;
-	top: 25%;
+	top: 20%;
 	transform: translate(-50%, -50%);
+}
+
+.seclink{
+	color: #521BC3;
+	position: absolute;
+	top: 26%;
+	
+}
+
+.seclink:hover{
+	cursor: pointer;
+	color: #b942f4;
+}
+
+#ed{
+	left: 20%;
+}
+
+#sk{
+	left: 32%;
+}
+
+#ex{
+	left: 38.5%;
+}
+
+#pr{
+	left: 52%;
 }
 
 #resume{
@@ -605,17 +634,24 @@ body{
 .back{
 	background-color: #EDF6FB;
 	font-family: Poppins;
+	font-size: 2vw;
 	color: #521BC3;
 	position: absolute;
 	left: 7%;
 	top: 15%;
 	height: 8vw;
+	opacity: .8;
 	width: 8vw;
 	border-radius: 8vw;
 }
 
 .back:focus{
 	outline-width: 0;
+}
+.back:hover{
+
+	cursor: pointer;
+	opacity: 1;
 }
 
 #lans{
@@ -666,7 +702,7 @@ body{
 	width: 34vw;
 	height:20vw;
 	left: 55%;
-	top: 10%;
+	top: 3%;
 	z-index: 200;
 	background-image: url("img/sorrento.png");
 	background-size: contain;
@@ -699,6 +735,10 @@ body{
 	background-image: url("img/cal.png");
 }
 
+#cal:hover{
+	cursor: pointer;
+}
+
 #karaoke{
 	left: 24%;
 	width:10vw;
@@ -712,4 +752,51 @@ body{
 	width: 8.78vw;
 	top:70%;
 	background-image: url("img/quake.png");
+}
+
+.ptalk{
+	position: absolute;
+	width: 60%;
+	left: 35%;
+	color: #EDF6FB;
+	font-size: 1.5vw;
+	font-family: Poppins;
+}
+
+#caltalk{
+	top: 12%;
+}
+
+#karaoketalk{
+	top: 42%;
+}
+
+#quaketalk{
+	top: 72%;
+}
+
+#edutalk{
+	position: absolute;
+	width: 30%;
+	left: 75%;
+	top: 50%;
+	color: #EDF6FB;
+	font-size: 1.5vw;
+	font-family: Poppins;
+	transform: translate(-50%, -50%);
+}
+
+#squi{
+	position: absolute;
+	border-color: #EDF6FB;
+	border-style: solid;
+	border-width: .8vw;
+	width: 25vw;
+	height:34vw;
+	left: 38%;
+	top: 50%;
+	z-index: 200;
+	background-image: url("img/squi.jpg");
+	background-size: contain;
+	transform: translate(-50%, -50%);
 }
