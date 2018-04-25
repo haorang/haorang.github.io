@@ -5,24 +5,10 @@ body{
 	margin-bottom: 0;
 }
 
-#gridcon{
-	display: none;
-	grid-template-rows: 1/3 1/3 1/3;
-	grid-template-columns: 20% 20% 20% 20% 20%;
-	grid-template-areas: 
-		"tl tml tm tmr tr"
-		"ml mml mm mmr mr"
-		"bl bml bm bmr br";
-	justify-content: space-between;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -1;
-}
 
 
 #framecon {
-	background-image: url("img/uhh.png");
+	background-image: url("img/face.png");
 	background-size: contain;
 	position: fixed;
 	width: 12.6vw;
