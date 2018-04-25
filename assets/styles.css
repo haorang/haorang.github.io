@@ -68,7 +68,7 @@ body{
 	position: fixed;
 	font-size: 1.5vw;
 	width: 20vw;
-	height: 6.5vw;
+	height: 10vw;
 	left: 70%;
 	top: 20%;
 	z-index: 300;
@@ -81,29 +81,29 @@ body{
 
 #tamtalk{
 	display: none;
-	height: 10vw;
+	height: 16vw;
 }
 
 #soctalk{
 	display: none;
-	height: 2.5 vw;
+	height: 2.5vw;
 }
 
 #dentalk{
 	display: none;
-	height:11.5vw;
+	height: 19vw;
 	font-size: 1.25vw;
 }
 
 #sdtalk{
 	display: none;
-	height: 9.5vw;
+	height: 15vw;
 	font-size: 1.4vw;
 }
 
 #berktalk{
 	display: none;
-	height: 10vw;
+	height: 14vw;
 }
 
 #namecon{
@@ -524,7 +524,7 @@ body{
 
 #content2 {
 	background-color: #EDF6FB;
-	font-size: 700%;
+	font-size: 2vw;
 	height: 50vw;
 	width: 100vw;
 	z-index: 0;
@@ -532,70 +532,184 @@ body{
 	background-size: fill;
 }
 
-
-
-
-
-#tl{
-	grid-area: "tl";
-	background-color: #005506;
-}
-#tml{
-	grid-area: "tml";
-	background-color: #149594;
-}
-#tm{
-	grid-area: "tm";
-	background-color: #005506;
-}
-
-#tmr{
-	grid-area: "tmr";
-	background-color: #149594;
-}
-#tr{
-	grid-area: "tr";
-	background-color: #0FFF06;
+#search{
+	position: absolute;
+	font-family: Poppins;
+	color: #521BC3;
+	font-size: 1.5vw;
+	border-radius: .4vw;
+	height: 3vw;
+	width: 30vw;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: 0px solid;
+    padding: 10px;
+    box-shadow: 3px 3px 3px #888888;
 }
 
-#ml{
-	grid-area: "ml";
-	background-color: #1FFF56;
-}
-#mml{
-	grid-area: "mml";
-	background-color: #149594;
-}
-#mm{
-	grid-area: "mm";
-	background-color: #100056;
-}
-#mmr{
-	grid-area: "mmr";
-	background-color: #149594;
-}
-#mr{
-	grid-area: "mr";
-	background-color: #123456;
+.shadow{
+	border: 0px solid;
+    padding: 10px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.8);
 }
 
-#bl{
-	grid-area: "bl";
-	background-color: #1FF456;
+#search:focus{
+	outline-width: 0px;
 }
-#bml{
-	grid-area: "bml";
-	background-color: #149594;
+
+#explanation{
+	color: #521BC3;
+	position: absolute;
+	width: 60vw;
+	left: 50%;
+	top: 25%;
+	transform: translate(-50%, -50%);
 }
-#bm{
-	grid-area: "bm";
-	background-color: #123456;
+
+#resume{
+	color:#2f6fd6;
+	position: absolute;
+	left: 39.5%;
+	top: 37%;
+	transform: translate(-50%, -50%);
 }
-#bmr{
-	grid-area: "bmr";
-	background-color: #149594;
+
+#resume:hover{
+	cursor: pointer;
 }
-#br{
-	grid-area: "br";
-	background-color: #123456
+
+#box{
+	background-color:  #521BC3;
+	position: absolute;
+	width: 3vw;
+	border-radius: 2vw;
+	height: 7vw;
+	left: 97.8%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.pagepart{
+	width: 100vw;
+	background-color:  #521BC3;
+	height: 100vh;
+	z-index:2000;
+	left: 100%;
+	top: 0%;
+	position: absolute;
+	transition: 1s;
+}
+
+.back{
+	background-color: #EDF6FB;
+	font-family: Poppins;
+	color: #521BC3;
+	position: absolute;
+	left: 7%;
+	top: 15%;
+	height: 8vw;
+	width: 8vw;
+	border-radius: 8vw;
+}
+
+.back:focus{
+	outline-width: 0;
+}
+
+#lans{
+	position: absolute;
+	width: 45vw;
+	height:12vw;
+	left: 30%;
+	top: 25%;
+	z-index: 200;
+	background-image: url("img/languages.png");
+	background-size: contain;
+}
+
+#other{
+	position: absolute;
+	width: 45vw;
+	height:12vw;
+	left: 30%;
+	top: 60%;
+	z-index: 200;
+	background-image: url("img/other.png");
+	background-size: contain;
+}
+
+#lanstalk{
+	position: absolute;
+	color: #EDF6FB;
+	font-family: Poppins;
+	left: 50%;
+	top: 20%;
+	transform: translateX(-50%);
+}
+
+#othertalk{
+	position: absolute;
+	color: #EDF6FB;
+	font-family: Poppins;
+	left: 52%;
+	top: 55%;
+	transform: translateX(-50%);
+}
+
+#sorr{
+	position: absolute;
+	border-color: #EDF6FB;
+	border-style: solid;
+	border-width: .8vw;
+	width: 34vw;
+	height:20vw;
+	left: 55%;
+	top: 10%;
+	z-index: 200;
+	background-image: url("img/sorrento.png");
+	background-size: contain;
+	transform: translateX(-50%);
+}
+
+#exptalk{
+	position: absolute;
+	width: 60%;
+	color: #EDF6FB;
+	font-size: 1.8vw;
+	font-family: Poppins;
+	left: 55%;
+	top: 53%;
+	transform: translateX(-50%);
+}
+
+.icon{
+	position: absolute;
+	width: 11vw;
+	height:11vw;
+	z-index: 200;
+	background-size: contain;
+	transform: translateX(-50%);
+}
+
+#cal{
+	left: 24%;
+	top:10%;
+	background-image: url("img/cal.png");
+}
+
+#karaoke{
+	left: 24%;
+	width:10vw;
+	height: 10vw;
+	top:40%;
+	background-image: url("img/karaoke.png");
+}
+
+#quake{
+	left: 24%;
+	width: 8.78vw;
+	top:70%;
+	background-image: url("img/quake.png");
 }

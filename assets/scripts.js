@@ -311,11 +311,52 @@ $('#ball').hover(function(){
 
 
 
+$( "#search" ).bind('keypress', function(e) {
+    if(e.keyCode==13){
+        var search = $("#search").val().toLowerCase();
+        if (search == "skill" || search == "skills"){
+         console.log("skills");
+         $("#skills").css("left", "0%");
+         $("#search").val("");
+         $("#search").hide();
+        }
 
+        else if (search == "education"){
+
+        }
+        else if (search == "project" || search == "projects"){
+         $("#projects").css("left", "0%");
+         $("#search").val("");
+         $("#search").hide();
+        }
+        else if (search == "experiences" || search == "experience" || search == "exp"){
+         console.log("mem");
+         $("#exp").css("left", "0%");
+         $("#search").val("");
+         $("#search").hide();
+        }
+        else{
+
+        }
+    }
 });
 
+$(".back").click(function(){
+   var par = $(this).parent()
+   $(par).css("left", "-100%");
+    setTimeout(function(){  
+            $(par).hide();
+            $(par).css("left", "200%");
+         }, 1300);
 
+    setTimeout(function(){  
+            $(par).show();
+         }, 2300);
+  
+   $("#search").show();
+});
 
+});
 
 
 
