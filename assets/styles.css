@@ -22,7 +22,6 @@ body{
 
 
 #framecon {
-	display: none;
 	background-image: url("img/uhh.png");
 	background-size: contain;
 	position: fixed;
@@ -81,7 +80,11 @@ body{
 
 #tamtalk{
 	display: none;
-	height: 16vw;
+	height: 13vw;
+}
+
+#roomtalk{
+	display: none;
 }
 
 #soctalk{
@@ -91,19 +94,19 @@ body{
 
 #dentalk{
 	display: none;
-	height: 19vw;
+	height: 15vw;
 	font-size: 1.25vw;
 }
 
 #sdtalk{
 	display: none;
-	height: 15vw;
+	height: 12vw;
 	font-size: 1.4vw;
 }
 
 #berktalk{
 	display: none;
-	height: 14vw;
+	height: 12vw;
 }
 
 #namecon{

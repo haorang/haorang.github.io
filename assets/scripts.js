@@ -8,13 +8,12 @@ $(document).ready(function(){
       var loadedSection = $(this);
 
       //using index
-      if(index == 3){
-         $("#fp-nav ul li a span, .fp-slidesNav ul li a span ").css("background", "#521BC3 !important");
-         console.log("we made it fa");
+      if(index == 2 || index == 3 ){
+         $('#framecon').fadeOut();
+         
       }
       else{
-         $("#fp-nav ul li a span, .fp-slidesNav ul li a span ").css("background", "#EDF6FB !important");
-         console.log("else");
+          $("#framecon").fadeIn();
       }
       }
 
@@ -39,7 +38,7 @@ $(document).ready(function(){
    $('#tam').hover(function(){
    		$(this).css("background-image", 'url("assets/img/coloredTAM7.svg")');
          $(".speech-bubble").fadeOut();
-         $("#dentalk").fadeOut();
+         $("#tamtalk").css("display", "flex");
          $("#tamtalk").fadeIn(400);
 
    },
@@ -51,6 +50,7 @@ $(document).ready(function(){
    $('#den').hover(function(){
    		$(this).css("background-image", 'url("assets/img/coloredden4.svg")');
          $(".speech-bubble").fadeOut(400);
+         $("#dentalk").css("display", "flex");
          $("#dentalk").fadeIn(400);
       
 
@@ -63,6 +63,7 @@ $(document).ready(function(){
    $('#sd').hover(function(){
          $(this).css("background-image", 'url("assets/img/sd5.svg")');
          $(".speech-bubble").fadeOut(400);
+         $("#sdtalk").css("display", "flex");
          $("#sdtalk").fadeIn(400);
 
    },
@@ -78,6 +79,7 @@ $(document).ready(function(){
         
                $("#berk").css("background-image", 'url("assets/img/coloredberk.svg")');
                $(".speech-bubble").fadeOut(400);
+               $("#berktalk").css("display", "flex");
                $("#berktalk").fadeIn(400);
 
 
