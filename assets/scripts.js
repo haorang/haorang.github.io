@@ -326,7 +326,9 @@ $( "#search" ).bind('keypress', function(e) {
         }
 
         else if (search == "education"){
-
+         $("#education").css("left", "0%");
+         $("#search").val("");
+         $("#search").hide();
         }
         else if (search == "project" || search == "projects"){
          $("#projects").css("left", "0%");
