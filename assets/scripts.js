@@ -23,10 +23,16 @@ $(document).ready(function(){
    $(document).on("mousemove", function(event){
       var xpos = event.clientX;
       var ypos = event.clientY;
-      var unitw = $(window).width()/5;
-      var unith = $(window).height()/6;
+      var unitw = $(window).width()/100;
+      var unith = $(window).height()/100;
       var xind = Math.floor(xpos/unitw);
-      var yind = Math.floor(ypos/unith)
+      var yind = Math.floor(ypos/unith);
+      if (yind>= 26 && yind <= 32 && xind >= 47 && xind<= 51){
+         $("#framecon").css("background-image", 'url("assets/img/derp.png")');
+      }
+      else{
+         $("#framecon").css("background-image", 'url("assets/img/face.png")');
+      }
       console.log(xind, yind);
    });
 
@@ -39,7 +45,6 @@ $(document).ready(function(){
    		$(this).css("background-image", 'url("assets/img/coloredTAM7.svg")');
          $(".speech-bubble").fadeOut();
          $("#tamtalk").css("display", "flex"); // jQuery Function Number 4
-         $("#tamtalk").fadeIn(400);
 
    },
    function(){
@@ -51,7 +56,6 @@ $(document).ready(function(){
    		$(this).css("background-image", 'url("assets/img/coloredden4.svg")');
          $(".speech-bubble").fadeOut(400);
          $("#dentalk").css("display", "flex");
-         $("#dentalk").fadeIn(400);
       
 
    },
@@ -64,7 +68,6 @@ $(document).ready(function(){
          $(this).css("background-image", 'url("assets/img/sd5.svg")');
          $(".speech-bubble").fadeOut(400);
          $("#sdtalk").css("display", "flex");
-         $("#sdtalk").fadeIn(400);
 
    },
    function(){
@@ -80,7 +83,6 @@ $(document).ready(function(){
                $("#berk").css("background-image", 'url("assets/img/coloredberk.svg")');
                $(".speech-bubble").fadeOut(400);
                $("#berktalk").css("display", "flex");
-               $("#berktalk").fadeIn(400);
 
 
    },
